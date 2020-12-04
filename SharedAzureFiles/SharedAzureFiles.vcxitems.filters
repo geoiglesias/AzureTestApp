@@ -6,17 +6,17 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)..\..\AzureSdk-7.0.0\debug\bin\cpprest_2_10d.dll">
-      <Filter>Dlls</Filter>
-    </None>
-    <None Include="$(MSBuildThisFileDirectory)..\..\AzureSdk-7.0.0\debug\bin\wastorage.dll">
-      <Filter>Dlls</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)AzureApiTestFunctions.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)AzureApiTestFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\AzureSdk-7.0.0\debug\bin\cpprest_2_10d.dll">
+      <Filter>Dlls</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\AzureSdk-7.0.0\debug\bin\wastorage.dll">
+      <Filter>Dlls</Filter>
+    </None>
   </ItemGroup>
 </Project>

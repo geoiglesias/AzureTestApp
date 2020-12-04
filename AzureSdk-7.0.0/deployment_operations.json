@@ -1,0 +1,19 @@
+[
+  {
+    "id": "/subscriptions/fba08278-d6f6-42c2-b406-e696d0420db8/resourceGroups/CogmedixTestResGroup/providers/Microsoft.Resources/deployments/Microsoft.StorageAccount-20201007133225/operations/49B736880AFAC26A",
+    "operationId": "49B736880AFAC26A",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2020-10-07T17:39:42.4852922Z",
+      "duration": "PT1.7540753S",
+      "trackingId": "e2549252-6a41-4138-98f2-c93f3d047307",
+      "statusCode": "Accepted",
+      "targetResource": {
+        "id": "/subscriptions/fba08278-d6f6-42c2-b406-e696d0420db8/resourceGroups/CogmedixTestResGroup/providers/Microsoft.Storage/storageAccounts/innovoycetest",
+        "resourceType": "Microsoft.Storage/storageAccounts",
+        "resourceName": "innovoycetest"
+      }
+    }
+  }
+]

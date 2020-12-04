@@ -1,0 +1,70 @@
+{
+  "id": "/subscriptions/fba08278-d6f6-42c2-b406-e696d0420db8/resourceGroups/CogmedixTestResGroup/providers/Microsoft.Resources/deployments/Microsoft.StorageAccount-20201007133225",
+  "name": "Microsoft.StorageAccount-20201007133225",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/fba08278-d6f6-42c2-b406-e696d0420db8/resourcegroups/CogmedixTestResGroup/providers/Microsoft.Storage/storageAccounts/innovoycetest",
+    "marketplaceItemId": "Microsoft.StorageAccount",
+    "provisioningHash": "Default"
+  },
+  "properties": {
+    "templateHash": "16676323329717024192",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "innovoycetest"
+      },
+      "accountType": {
+        "type": "String",
+        "value": "Standard_RAGRS"
+      },
+      "kind": {
+        "type": "String",
+        "value": "StorageV2"
+      },
+      "accessTier": {
+        "type": "String",
+        "value": "Hot"
+      },
+      "minimumTlsVersion": {
+        "type": "String",
+        "value": "TLS1_2"
+      },
+      "supportsHttpsTrafficOnly": {
+        "type": "Bool",
+        "value": true
+      },
+      "allowBlobPublicAccess": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2020-10-07T17:39:42.4299275Z",
+    "duration": "PT2.5997283S",
+    "correlationId": "ec8d1a57-703e-42eb-8f89-f117995f343e",
+    "providers": [
+      {
+        "namespace": "Microsoft.Storage",
+        "resourceTypes": [
+          {
+            "resourceType": "storageAccounts",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "validationLevel": "Template"
+  }
+}
