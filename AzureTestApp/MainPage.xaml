@@ -8,6 +8,6 @@
     mc:Ignorable="d">
 
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Button x:Name="myButton" Click="ClickHandler">Click Me</Button>
+        <Button x:Name="myButton" Click="ClickHandler" Height="173" Width="1007" FontSize="48">Click here to Test Azure Cpp Rest API</Button>
     </StackPanel>
 </Page>
