@@ -2,11 +2,7 @@
     C++/WinRT AzureTestApp2 Project Overview
 ========================================================================
 
-This project demonstrates how to get started writing XAML apps directly
-with standard C++, using the C++/WinRT SDK component and XAML compiler 
-support to generate implementation headers from interface (IDL) files.
-These headers can then be used to implement the local Windows Runtime 
-classes referenced in the app's XAML pages.
+This project demonstrates a simple inegration with https://github.com/Azure/azure-sdk-for-cpp/tree/master/sdk/storage
 
 Steps:
 1. Create an interface (IDL) file to define any local Windows Runtime 
