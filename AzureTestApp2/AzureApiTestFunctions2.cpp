@@ -26,7 +26,7 @@ void AzureApiTestFunctions2::TestAzureRestApi()
             IsComplete = false;
 
             std::string storage_connection_string_remote =
-                "DefaultEndpointsProtocol=https;AccountName=innovoycetest;AccountKey=GnCTHek8fI6WfipIzOxt6GzrvbFOwOs+QhdWn9Nmuu8YYhMLcuoFhvRVfdciBpZejdXAeZCGIMaHXn9d8gNsyg==;EndpointSuffix=core.windows.net";
+                "bla bla bla";
 
             std::string shareName = "sample-share";
             std::string fileName = "sample-file.txt";

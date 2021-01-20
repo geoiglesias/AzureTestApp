@@ -30,7 +30,7 @@ void AzureApiTestFunctions::TestAzureRestApi()
 
             // We're now on a background thread.
             std::wstring storage_connection_string_remote =
-                L"DefaultEndpointsProtocol=https;AccountName=innovoycetest;AccountKey=GnCTHek8fI6WfipIzOxt6GzrvbFOwOs+QhdWn9Nmuu8YYhMLcuoFhvRVfdciBpZejdXAeZCGIMaHXn9d8gNsyg==;EndpointSuffix=core.windows.net";
+                L"bla bla bla";
 
             std::wstringstream errStream;
             errStream << "Begin Azure REST APT test" << std::endl;
