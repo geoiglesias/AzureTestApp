@@ -51,10 +51,31 @@
     <Filter Include="Assets">
       <UniqueIdentifier>{e48dc53e-40b1-40cb-970a-f89935452892}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Dlls">
+      <UniqueIdentifier>{93ee0342-bed3-42e1-85b5-714fc716edc3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="PropertySheet.props" />
     <None Include="packages.config" />
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\charset-1.dll">
+      <Filter>Dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\iconv-2.dll">
+      <Filter>Dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\libcurl.dll">
+      <Filter>Dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\libxml2.dll">
+      <Filter>Dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\lzma.dll">
+      <Filter>Dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\zlib1.dll">
+      <Filter>Dlls</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme.txt" />

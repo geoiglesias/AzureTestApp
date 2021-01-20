@@ -21,5 +21,5 @@ In the Vcpkg directory C:\dev\vcpkg\installed\x64-windows
 the following sub directories are created
 bin/  debug/  include/  lib/  share/
 
-In the 'blu\3rdParty\AzureSdk-7.0.0' directory copy 
-bin/  include/  lib/ 
+copy bin/  include/  lib/ from C:\dev\vcpkg\installed\x64-windows
+to the 'blu\3rdParty\AzureSdk-7.0.0' directory

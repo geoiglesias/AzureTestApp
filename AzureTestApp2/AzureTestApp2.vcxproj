@@ -99,11 +99,19 @@
     <ClCompile>
       <PreprocessorDefinitions>BUILD_CURL_HTTP_TRANSPORT_ADAPTER;NOMINMAX;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\Developement\Vcpkg\vcpkg\installed\x64-windows-static\include;C:\Projects\Developement\Vcpkg\vcpkg\packages\nlohmann-json_x64-windows-static\include;C:\Projects\Developement\Azure\azure-sdk-for-cpp\sdk\storage\azure-storage-files-shares\inc;C:\Projects\Developement\Azure\azure-sdk-for-cpp\sdk\storage\azure-storage-common\inc;C:\Projects\Developement\Azure\azure-sdk-for-cpp\sdk\identity\azure-identity\inc;C:\Projects\Developement\Azure\azure-sdk-for-cpp\sdk\core\azure-core\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Projects\Developement\Vcpkg\vcpkg\installed\x64-windows-static\include;C:\Projects\Developement\Vcpkg\vcpkg\packages\nlohmann-json_x64-windows-static\include;C:\Projects\Developement\Azure\azure-sdk-for-cpp\sdk\storage\azure-storage-files-shares\inc;C:\Projects\Developement\Azure\azure-sdk-for-cpp\sdk\storage\azure-storage-common\inc;C:\Projects\Developement\Azure\azure-sdk-for-cpp\sdk\identity\azure-identity\inc;C:\Projects\Developement\Azure\azure-sdk-for-cpp\sdk\core\azure-core\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Projects\Developement\Vcpkg\vcpkg\installed\x64-windows-static\lib;C:\Projects\Developement\Azure\azure-sdk-for-cpp\out\build\x64-DebugWithTests\sdk\identity\azure-identity;C:\Projects\Developement\Azure\azure-sdk-for-cpp\out\build\x64-DebugWithTests\sdk\storage\azure-storage-files-shares;C:\Projects\Developement\Azure\azure-sdk-for-cpp\out\build\x64-DebugWithTests\sdk\storage\azure-storage-common;C:\Projects\Developement\Azure\azure-sdk-for-cpp\out\build\x64-DebugWithTests\sdk\core\azure-core;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">iconv.lib;lzma.lib;libxml2.lib;Crypt32.Lib;Wldap32.Lib;zlib.lib;libcurl.lib;azure-core.lib;azure-identity.lib;azure-storage-common.lib;azure-storage-files-shares.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/NODEFAULTLIB:libcmt.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Link>
+      <AdditionalLibraryDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">C:\Projects\Developement\Vcpkg\vcpkg\installed\arm-windows\lib;C:\Projects\Developement\Azure\azure-sdk-for-cpp\out\build\arm-Debug\sdk\identity\azure-identity;C:\Projects\Developement\Azure\azure-sdk-for-cpp\out\build\arm-Debug\sdk\storage\azure-storage-files-shares;C:\Projects\Developement\Azure\azure-sdk-for-cpp\out\build\arm-Debug\sdk\storage\azure-storage-common;C:\Projects\Developement\Azure\azure-sdk-for-cpp\out\build\arm-Debug\sdk\core\azure-core;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">iconv.lib;lzma.lib;libxml2.lib;Crypt32.Lib;Wldap32.Lib;zlib.lib;libcurl.lib;azure-core.lib;azure-identity.lib;azure-storage-common.lib;azure-storage-files-shares.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Link>
+      <AdditionalDependencies Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">iconv.lib;lzma.lib;libxml2.lib;Crypt32.Lib;Wldap32.Lib;zlib.lib;libcurl.lib;azure-core.lib;azure-identity.lib;azure-storage-common.lib;azure-storage-files-shares.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
@@ -169,6 +177,24 @@
     </Midl>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\charset-1.dll">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\iconv-2.dll">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\libcurl.dll">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\libxml2.dll">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\lzma.dll">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+    </None>
+    <None Include="..\..\..\..\Vcpkg\vcpkg\installed\arm-windows\bin\zlib1.dll">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
+    </None>
     <None Include="packages.config" />
     <None Include="PropertySheet.props" />
     <Text Include="readme.txt">

@@ -1,19 +1,18 @@
-========================================================================
-    C++/WinRT AzureTestApp2 Project Overview
-========================================================================
 
 This project demonstrates a simple inegration with https://github.com/Azure/azure-sdk-for-cpp/tree/master/sdk/storage
 
-Steps:
-1. Create an interface (IDL) file to define any local Windows Runtime 
-    classes referenced in the app's XAML pages.
-2. Build the project once to generate implementation templates under 
-    the "Generated Files" folder, as well as skeleton class definitions 
-    under "Generated Files\sources".  
-3. Use the skeleton class definitions for reference to implement your
-    Windows Runtime classes.
+This project assums that the Track 2 SDK was built with the instructions located here 
+https://github.com/Azure/azure-sdk-for-cpp/tree/master/sdk/storage
 
-========================================================================
-Learn more about C++/WinRT here:
-http://aka.ms/cppwinrt/
-========================================================================
+for bothe x64-windows-static and arm-windows vcpkg architectures
+
+ -> vcpkg.exe install libxml2:x64-windows-static curl:x64-windows-static nlohmann-json:x64-windows-static
+ -> vcpkg.exe install libxml2:arm-windows curl:arm-windows nlohmann-json:arm-windows
+
+I built the Track 2 SDK from Source
+First, download the repository to your local folder:
+git clone https://github.com/Azure/azure-sdk-for-cpp.git
+Open the folder in VS2019 and built as a cmake project.
+For the Arm builds  I created a new enttry in the Cmakesettigs .json to add an arm-Dubug target using the x86-Debug entry as a template and replacing x86-windows with arem-windows for he vcpkg target.
+
+After all the above is built ensure the link paths are correct and the correct dlls are references in the project.
